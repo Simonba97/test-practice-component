@@ -1,0 +1,30 @@
+{
+  "name": "test-practice-component",
+  "description": "Webcomponent test-practice-component following open-wc recommendations",
+  "license": "MIT",
+  "author": "test-practice-component",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./test-practice-component.js": "./test-practice-component.js"
+  },
+  "scripts": {
+    "analyze": "cem analyze --litelement",
+    "start": "web-dev-server",
+    "test": "web-test-runner --coverage",
+    "test:watch": "web-test-runner --watch"
+  },
+  "dependencies": {
+    "lit": "^3.1.4"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.10.3",
+    "@open-wc/testing": "^4.0.0",
+    "@web/dev-server": "^0.4.6",
+    "@web/test-runner": "^0.18.2"
+  },
+  "customElements": "custom-elements.json"
+}
